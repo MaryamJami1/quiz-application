@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Modern font for a clean look */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient background for a modern feel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Quiz Section */
+.quiz-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Quiz Container */
+.quiz {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: slideIn 0.5s ease; /* Slide-in animation for the quiz container */
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Question Styling */
+.question {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* List Items */
+li {
+    margin: 12px 0;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f0f4f8;
+}
+
+/* Radio Inputs */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Button Container */
+.btn {
+    margin-top: 20px;
+}
+
+/* Submit Button */
+button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+/* Focus States */
+button:focus,
+input[type="radio"]:focus + label {
+    outline: 2px solid #ff6b6b;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .quiz {
+        padding: 20px;
+    }
+    .question {
+        font-size: 20px;
+    }
+    label {
+        font-size: 16px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
