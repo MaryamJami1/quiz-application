@@ -99,22 +99,19 @@ btn.addEventListener("click", function () {
         loadQuiz();
 
     } else {
-        quizBox.innerHTML = `<div class ="result"> 
-       <h2> Your score : ${score}/${quizData.length} Correct answers</h2>
-       <p>Congratulations on completing the quiz</p>
-       </div>`;
+        quizBox.innerHTML = `
+    <div class="result"> 
+        <h2>
+            <i class="fas fa-trophy"></i> <!-- Trophy Icon for Score -->
+            Your score: ${score}/${quizData.length} Correct answers
+        </h2>
+        <p>
+            <i class="fas fa-smile"></i> <!-- Smile Icon for Congratulations -->
+            Congratulations on completing the quiz!
+        </p>
+    </div>`;
     }
 });
 
 // Load the first question initially
 loadQuiz();
-
-
-
-
-
-
-
-
-
-

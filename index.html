@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Application</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
 </head>
 
 <body>
@@ -13,36 +14,34 @@
     <div class="quiz-section">
         <div class="quiz" id="Quiz">
             <h1 id="question" class="question">
-            
+                <i class="fas fa-question-circle"></i> <!-- Question Icon -->
             </h1>
             <hr>
             <ul>
                 <li>
                     <input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="option-1"></label>
+                    <label for="a" id="option-1"><i class="fas fa-check-circle"></i></label> <!-- Option Icon -->
                 </li>
-
                 <li>
                     <input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="option-2"></label>
+                    <label for="b" id="option-2"><i class="fas fa-check-circle"></i></label>
                 </li>
-
                 <li>
-                    <input type="radio" name="answer" class="answer" id="c" >
-                    <label for="c" id="option-3"></label>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label for="c" id="option-3"><i class="fas fa-check-circle"></i></label>
                 </li>
-
                 <li>
                     <input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="option-4"></label>
+                    <label for="d" id="option-4"><i class="fas fa-check-circle"></i></label>
                 </li>
             </ul>
             <hr>
             <div class="btn">
-                <button type="submit" id="submit" >Submit</button>
+                <button type="submit" id="submit"><i class="fas fa-paper-plane"></i> Submit</button> <!-- Submit Icon -->
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
 </body>
